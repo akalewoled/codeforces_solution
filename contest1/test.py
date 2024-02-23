@@ -1,18 +1,12 @@
-""" 
-to be optimum the the clever student should team up with the low level student 
-"""
-no_of_students=int(input())
-skills=list(map(int,input().split()))
-skills.sort()   # sorting based on theier educational level
-no_of_question=0
-for i in range (0,t,2):
-    no_of_question=skills[i+1]-skills[i]+no_of_question
-print (no_of_question)
-
-t=int(input())
+b=list(map(int,input().split()))
 ar=list(map(int,input().split()))
+n=b[0]
+t=b[1]
 ar.sort()
-g=0
-for i in range (0,t,2):
-    g=ar[i+1]-ar[i]+g
-print (g)
+for i in range (t):
+    query=list(map(int,input().split()))
+    q2=-1*query[0]
+    q3=query[1]
+    p=ar[q2:]
+    r=p[:q3]
+    print(sum(r))

@@ -9,3 +9,4 @@ for i in range(number_2):
         number_1-=1
     
 print(number_1)
+
