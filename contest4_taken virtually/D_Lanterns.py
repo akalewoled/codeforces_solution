@@ -6,8 +6,10 @@ for _ in range(int(input())):
     for _ in range(n):
         x, y = map(int, (input().split()))
         d[x].append(y)
-    res = 0
-    for i in d:
-        d[i].sort(reverse=True)
-        res += sum(d[i][:i])
-    print(res)
+
+                {2:[2],1:[6,10,13]}
+    counter = 0
+    for i, j in dicts.items():
+        j.sort ( reverse=True)
+        counter += sum(j[:i])
+    print(counter)
