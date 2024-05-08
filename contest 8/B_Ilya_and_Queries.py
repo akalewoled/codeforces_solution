@@ -1,3 +1,4 @@
+
 string=input() 
 n=int(input())
 presum=[1] # the list to hold the repitition of the valid indexes'

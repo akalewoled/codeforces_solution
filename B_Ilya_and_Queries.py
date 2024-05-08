@@ -8,6 +8,7 @@ for i in range(1,len(string)):
         c+=1
     presum.append(c)
 print(presum)
+
 for i in range(n):
     l,r=map(int,input().split())
     print(presum[r-1]-presum[l-1])
