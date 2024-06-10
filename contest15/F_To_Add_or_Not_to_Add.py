@@ -1,8 +1,9 @@
 n,k=map(int, input().split())
 array=list(map(int,input().split()))
+
 array.sort()
 
-summ,maxx =0,-1
+summ,maxx =0,0
 
 item,i,j=0,0,0
 
